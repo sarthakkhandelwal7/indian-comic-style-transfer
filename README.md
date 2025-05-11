@@ -53,4 +53,19 @@ This project includes tools for processing comic images, such as panel extractio
 -   **Script**: Panel extraction logic is available in `image_processing/using_opencv/extract_panels.py`.
 -   **Sample Images**: Related sample images can be found in `image_processing/using_opencv/samples/`.
 
+### Advanced Comic Analysis with Magi Model
+
+For more comprehensive understanding and transcription of comic/manga pages, the **Magi (The Manga Whisperer)** model presents a specialized and powerful solution.
+
+-   **Capabilities**: Magi is designed to detect not only panels but also characters and text blocks. It further processes this information by ordering panels, performing OCR, clustering character appearances, and matching dialogue to speakers, enabling the generation of detailed transcripts.
+-   **Advantages over other approaches**:
+    -   **Specialization**: Unlike generic segmentation models or rule-based OpenCV methods, Magi is tailored for the specific structures and content of comics and manga.
+    -   **Rich Information Extraction**: It goes beyond simple object detection to provide a deeper understanding of the page, including character interactions and dialogue flow.
+    -   **End-to-End Processing**: Offers a more complete pipeline from image to structured textual output.
+-   **Resources**:
+    -   **GitHub Repository**: [ragavsachdeva/magi](https://github.com/ragavsachdeva/magi)
+    -   **Hugging Face Model**: [ragavsachdeva/magi](https://huggingface.co/ragavsachdeva/magi) (and its v2 version)
+
+This model could be particularly beneficial for tasks requiring automated content analysis, character tracking, or generating accessible versions of comic content.
+
 ## Model comming soon
