@@ -4,13 +4,13 @@
 
 ## 📖 Overview
 
-This project explores how to adapt a pre‑trained Stable Diffusion model to the unique visual grammar of *Nagraj* comic panels. All details—goals, approach, and evaluation metrics—are experimental and may evolve as we gain insights.
+This project explores how to adapt a pre‑trained Stable Diffusion model to the unique visual grammar of *Indian* comic panels. All details—goals, approach, and evaluation metrics—are experimental and may evolve as we gain insights.
 
 ## 🎯 Project Goals (Tentative)
 
 * Experiment with LoRA adapters to capture Nagraj’s high‑contrast line art and flat colors.
 * Generate photo‑realistic inputs rendered as dynamic comic panels in Nagraj style.
-* Build an end‑to‑end Colab/demo pipeline for easy inference and sharing.
+* Build an end‑to‑end pipeline for easy inference and sharing.
 * Evaluate style fidelity qualitatively; refine based on visual assessments.
 
 ## 💡 Project Idea
@@ -21,12 +21,10 @@ Leverage unpaired style transfer: fine‑tune Stable Diffusion exclusively on 
 
 1. **Panel Extraction**: Use a Python/OpenCV script to crop rectangular panels from the PDF.
 2. **Data Preparation**: Resize and center‑crop all panels to 512×512 px; store in `data/style/`.
-3. **Prompt Assignment**: Use one or a small set of style‑focused prompts to label each image.
+3. **Prompt Assignment**: Use 一 or a small set of style‑focused prompts to label each image.
 4. **LoRA Fine‑tuning**: Run the Hugging Face Diffusers LoRA example on these panels.
 5. **Inference & Review**: Generate test outputs in Colab; compare against original panels.
 6. **Iteration**: Tweak prompts, hyperparameters, and dataset composition based on results.
-
-> **Note**: All steps are subject to change as we learn what works best for this niche comic style.
 
 ## 🚧 Current State
 
